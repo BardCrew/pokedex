@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display:flex;
+}
+
+.left-container, .right-container{
+    flex-basis: 50%;
+}
+
+.left-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    grid-gap: 2rem;
+}
+
+.card{
+    width: 95%;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    box-shadow:  0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5 rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.card h3{
+    float: left;
+    margin: 5% 5% 5% 5%;
+    background-color: red;
+    color: white;
+    padding: .5rem;
+    border-radius:  12px;
+}
+
+.right-container{
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 75px;
+    right: 10px;
+}
+
+.right-container img{
+    margin: 1rem;
+    height: 25%;
+}
+
+.right-container h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.type{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.group{
+    background-color: red;
+    color: white;
+    padding: .5rem;
+    font-size: 15px;
+    border-radius:  12px;
+}
+
+.base-stats{
+    margin-top: .5rem;
+    color: black;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: .3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border-radius: 8px;
+    
+}
+
+.data{
+    font-size: 30px;
+}
